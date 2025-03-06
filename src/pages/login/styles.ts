@@ -55,7 +55,8 @@ export const style = StyleSheet.create({
     input: {
         width: '90%',
         height: '100%',
-        borderRadius: 40
+        borderRadius: 40,
+        paddingLeft: 10
     },
     button: {
         width: 200,
@@ -64,13 +65,22 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: themas.colors.primary,
         borderRadius: 40,
-        marginTop: 25
+        marginTop: 25,
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowOpacity: 0.29,
+        shadowRadius: 4.65,
+        elevation: 7
     },
-    footer: {
-
-    },
+    footer: {},
     link: {
         color: themas.colors.blue, 
         textDecorationLine: 'underline'
+    },
+    textButton: {
+        color: themas.colors.white
     }
 })

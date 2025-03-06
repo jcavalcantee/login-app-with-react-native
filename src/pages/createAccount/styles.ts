@@ -11,11 +11,6 @@ export const testStyles = StyleSheet.create({
         borderRadius: 40,
         marginTop: 25
     },
-    containerButtons: {
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between'
-    },
     confirmButton: {
         backgroundColor: themas.colors.primary,
         width: 150,
@@ -27,6 +22,28 @@ export const testStyles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        flexDirection: 'column'
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
+    header: {
+        flex: 1,
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    logo: {
+        width:130, 
+        height:80,
+        marginTop: '8%'
+    },
+    middle: {
+        flex: 3
+    },
+    footer: {
+        flex: 0.2,
+        flexDirection: 'row',
+        marginBottom: '20%',
+        justifyContent: 'space-between',
+        width: '90%'
     }
 })
