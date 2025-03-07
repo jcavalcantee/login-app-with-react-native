@@ -23,13 +23,17 @@ export const testStyles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'column',
-        alignItems: 'center'
+        justifyContent: 'flex-start',
+        paddingBottom: 20
     },
     header: {
+        position: 'absolute',
         flex: 1,
         width: '100%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        zIndex: 1,
+        marginTop: '10%'
     },
     logo: {
         width:130, 
@@ -37,13 +41,26 @@ export const testStyles = StyleSheet.create({
         marginTop: '8%'
     },
     middle: {
-        flex: 3
+        // flex: 3
+        marginTop: '60%',
+        paddingHorizontal: 30,
+        flexGrow: 1
     },
     footer: {
-        flex: 0.2,
-        flexDirection: 'row',
-        marginBottom: '20%',
-        justifyContent: 'space-between',
-        width: '90%'
-    }
+        width: "100%", 
+        flexDirection: "row",
+        justifyContent: "space-around",
+        paddingVertical: 20,
+        backgroundColor: "#fff", 
+    },
+    formContainer: {
+        flex: 1, 
+        width: "100%",
+    },
+    scrollContainer: {
+        flexGrow: 1,
+        marginTop: '55%',
+        paddingHorizontal: 30,
+        paddingBottom: 100 
+    },
 })
